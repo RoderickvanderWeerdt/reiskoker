@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reiskoker <3</title>
+  <link rel="stylesheet" type="text/css" href="reiskoker.css" title="default">
+
+</head>
+<body>
+<div class="container">
+  <a href="index.html">
+  <div class="header">
+    <!-- <h1><a href="index.html"><span class="green">N</span><span>athalie's</span>&nbsp;<span class="green">K</span><span>eukenhulp</span></a></h1> -->
+    <!-- <div class="subheader"><p>Verspillen?<br />dat moeten we niet willen!</p></div> -->
+  </div>
+  </a>
+
+  <div class="topnav">
+    <a href="explanation.html">How to?</a>
+    <a href="travel.html">Reizen</a>
+    <a href="#" onclick="return getRandomDish();">Doe een gok!</a>
+    <!-- <a href="#" onclick="return goToRandomDish();">doe een gok</a> -->
+    <!-- <a href="#news">Maaltijd</a> -->
+    <!-- <a href="#contact">Soort</a> -->
+    <a href="top6.html">Top 6</a>
+  </div>
+    <div class="searchbar">
+    <div class="inside">
+    <!--Make sure the form has the autocomplete function switched off:-->
+<!-- <form autocomplete="off"> -->
+  <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="ingredientSearchBar" placeholder="Welk ingredi&#235;nt heb je over?">
+  </div>
+  <input type="submit" value="Go!" id="submit" onclick="return goToIngredientPage();" disabled=true>
+<!-- </form> -->
+      <!-- <input type="text" placeholder="How are you doing?"> -->
+    </div></div>
+  <div class="sidebar" id="sidebar">    <div id="sidebarCategories"> <div class="categoryHeader">Kies een keuken:<br /></div>
+<div class="category1"><a href="keuken_aziatisch.html">aziatisch</a></div>
+<div class="category2"><a href="keuken_indiaas.html">indiaas</a></div>
+<div class="category2"><a href="keuken_japans.html">japans</a></div>
+<div class="category2"><a href="keuken_koreaans.html">koreaans</a></div>
+<div class="category2"><a href="keuken_sri_lankaans.html">sri lankaans</a></div>
+<div class="category2"><a href="keuken_thais.html">thais</a></div>
+<div class="category2"><a href="keuken_vietnamees.html">vietnamees</a></div>
+
+<div class="category1"><a href="keuken_europees.html">europees</a></div>
+<div class="category2"><a href="keuken_albanees.html">albanees</a></div>
+<div class="category2"><a href="keuken_macedonie.html">macedonisch</a></div>
+<div class="category2"><a href="keuken_brits.html">brits</a></div>
+<div class="category2"><a href="keuken_fins.html">fins</a></div>
+<div class="category2"><a href="keuken_frans.html">frans</a></div>
+<div class="category2"><a href="keuken_hongaars.html">hongaars</a></div>
+<div class="category2"><a href="keuken_ijslands.html">ijslands</a></div>
+<div class="category2"><a href="keuken_nederlands.html">nederlands</a></div>
+<div class="category2"><a href="keuken_mediterraans.html">mediterraans</a></div>
+<div class="category3"><a href="keuken_italiaans.html">italiaans</a></div>
+<div class="category3"><a href="keuken_spaans.html">spaans</a></div>
+
+<div class="category1"><a href="#">overig</a></div>
+<div class="category2"><a href="keuken_amerikaans.html">amerikaans</a></div>
+<div class="category2"><a href="keuken_marokkaans.html">marokkaans</a></div>
+<div class="category2"><a href="keuken_mexicaans.html">mexicaans</a></div>
+<div class="category2"><a href="keuken_surinaams.html">surinaams</a></div>
+<br />
+
+<div class="categoryHeader">Kies een dieet:<br /></div>
+<div class="category1">
+	<a href="dieet_vis.html">vis</a>
+	<a href="dieet_vegetarisch.html">vegetarisch</a>
+	<a href="dieet_veganistisch.html">veganistisch</a>
+</div><br />
+
+<div class="categoryHeader">Kies een bereiding:<br /></div>
+<div class="category1"><a href="bereiding_airfryer.html">airfryer</a>
+	<a href="bereiding_curry.html">curry</a>
+	<a href="bereiding_eenpans.html">eenpans</a>
+	<a href="bereiding_noedel.html">noedel</a>
+	<a href="bereiding_oven.html">oven</a>
+	<a href="bereiding_pasta.html">pasta</a>
+	<a href="bereiding_rijst.html">rijst</a>
+	<a href="bereiding_salade.html">salade</a>
+	<a href="bereiding_soep.html">soep</a>
+	<a href="bereiding_stoof.html">stoof</a>
+	<a href="bereiding_tosti.html">tosti</a>
+</div><br />
+
+<div class="categoryHeader">Kies een menugang:<br /></div>
+<div class="category1"><a href="menugang_ontbijt.html">ontbijt</a>
+	<a href="menugang_lunch.html">lunch</a>
+	<a href="menugang_avondeten.html">avondeten</a>
+	<a href="menugang_dessert.html">dessert</a>
+	<a href="menugang_drankjes.html">drankjes</a>
+	<a href="menugang_hapjes.html">hapjes</a>
+	<a href="menugang_bijgerecht.html">bijgerecht</a>
+</div>    </div>    <div class="sidebarSlider" id="slider">
+      <p>Bereidingsduur Min:<input type="range" id="minSlider" class="slider" min="0" max="240" value="0"><span id="minSlider_label">0</span> minuten
+      </p>
+      <p>Bereidingsduur Max:<input type="range" id="maxSlider" class="slider" min="0" max="240" value="75"><span id="maxSlider_label">75</span> minuten<input type="button" id="sliderButton" onclick='location.href="duration.html?time="+document.getElementById("minSlider").value+"."+document.getElementById("maxSlider").value;' value="Go" />
+      </p>
+    </div>
+  </div>
+
+  <div class="contentIndex">
+    <div class="introText"><i>Welkom op Reiskoker! Niet te verwarren met rijstkoker, al komt deze ook zeker van pas. Deze website heeft ook niets te maken met een hoesje. Reiskoker is een combinatie van twee van mijn hobby's: reizen en koken. De recepten die op deze site staan hebben vaak een internationaal tintje en velen heb ik ook in het buitenland leren kennen. Ook vind je hier artikelen over reizen die ik heb gemaakt en de inspiratie die ik heb opgedaan. Maar het gaat verder, namelijk ook over de reis die een ingredi&#235;nt maakt. Het doel is om voedselverspilling te verminderen (en dus geen roet in het eten te gooien). Bekijk hier alvast wat recepten.<!-- Wat nog rest: --></i><br />
+
+<!-- <div style="line-height: 200%;">Heb je een ingredi&#235;nt over dat niet lang houdbaar is? Gooi het niet weg, want verspillen dat moeten we niet willen!<br />
+1. Stop dit in de keukenhulp (zoekmachine)<br />
+2. Je ingredi&#235;nt gaat op "reis" (zoekmachine zoekt geschikte recepten)<br />
+3. Bekijk de bestemming (geniet van een heerlijk gerecht)<br />
+4. Krijg inspiratie over de volgende reis (bekijk recepten met dezelfde ingredi&#235;nten)<br />
+5. Thuiskomst (de cirkel is rond en begint weer opnieuw met een ander ingredi&#235;nt)</div> --></div>
+    <table class="dishesTable" id="dishesTable">
+    </table>
+  </div>
+
+</div>
+
+
+<script>
+const ingredient_list = ["mosterd", "spekjes", "croutons", "zonnebloemolie", "masala kruiden", "rijst", "zout", "dadels", "eieren", "komijn", "water", "harissa", "ui", "witte kool", "avocado", "tamarindepasta of limoensap", "saffraan", "stokbrood", "rijstmeel", "creme fraiche", "jasmijnrijst", "wortels", "kaneel", "massamanpasta of garnalenpasta", "erwtjes", "amaretto", "whisky", "kiwi's", "tauge", "speklap ", "sesamzaadjes", "biefstuk", "chorizoworst", "slagroom", "geraspte kaas", "prei", "rijstvel", "risottorijst", "kippenbouillon", "rode ui", "garnalen", "sushirijst", "melk", "runderbouillon", "worcestersaus", "paprikapoeder", "kokosmelk", "kersen", "venkelknol", "mango", "tomaten", "komkommer", "kardemom", "appelstroop", "naan brood", "jus", "chilisaus", "boter", "framboos", "wokolie", "cranberries", "ahornsiroop", "ontbijtkoek", "zwarte peper", "mihoen", "rode curry pasta", "nootmuskaat", "basmatirijst", "citroensap", "basilicum", "chocola", "wit brood", "rodewijnazijn", "rijstazijn", "broodkruimels", "peterselie", "vloeibare boter", "fetakaas", "knoflook", "peultjes", "knoflookpoeder", "frietjes", "kikkererwten", "rundergehakt", "aardappels", "palmsuiker", "gochujang pasta of saus", "vissaus", "azijn", "korianderpoeder", "rijstnoedels", "rundvlees", "chilipeper", "radijsjes", "zeewier", "sherry", "gnocchi", "olijven", "spinazie", "kokosmelk of kokospoeder", "koolraap", "couscous", "sojasaus", "gebakken uitjes", "appel", "verse bieslook", "laurierblaadjes", "tikka masala pasta", "brood", "champignons", "koriander", "kip", "picadillo kruiden", "limoen", "pijnboompitten", "volkoren tortilla wraps", "citroen", "lamsvlees", "spitskool", "pesto arrabbiata", "italiaanse kruiden", "ongezouten pinda's", "oregano en tijm", "kokospoeder", "sambal", "vanille yoghurt", "bruine suiker", "honing", "parmezaanse kaas", "pompoen", "mozzarellakaas", "basterdsuiker", "bladerdeeg", "abrikozen", "rivierkreeftjes", "rode wijn", "peren", "paneermeel", "ketjap", "paprika", "ras el hanout", "tamarindepasta", "bloem", "pasta", "ananas", "mayonaise", "olijfolie", "katenspek", "peper", "pesto", "zalm", "peper en zout", "naanbrood", "tijm", "aubergine", "kruidnagels", "havermout", "ui ", "pastinaak", "vodka", "yoghurt", "kerriekruiden", "sla", "lente ui", "filobladerdeeg", "citroengras", "witte wijn", "tomatenpuree", "kappertjes", "sperziebonen", "ijs", "suiker", "rozijnen", "vanillevla", "groentebouillon", "roti pannenkoek", "mais", "roombotercake", "garam masala", "gorgonzola", "rode bessen of framboos", "bruin bier", "hoisin saus", "peper ", "munt", "gerookte kipfilet", "gemberpoeder"];
+</script>
+<script src="dishList.js"></script>
+<script src="recipe.js"></script>
+
+<script src="autocomplete_searchbar.js"></script>
+<script>
+autocomplete(document.getElementById("myInput"), ingredient_list);
+</script>
+
+Deze pagina laat <span id="dishCounter">?</span> gerechten zien.
+
+<script type="text/javascript">
+  getAllDishes(dishImgList);
+  // console.log(document.getElementById("slider").value);
+  document.getElementById("minSlider").oninput = function() {
+    sliderUpdate();
+  }; 
+  document.getElementById("maxSlider").oninput = function() {
+    sliderUpdate();
+  };
+
+ //  function goToRandomDish (){
+	// return getRandomDish(dishImgList);
+ //  }
+</script>
+
+
+</body>
+</html>

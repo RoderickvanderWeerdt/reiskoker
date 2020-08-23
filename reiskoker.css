@@ -1,0 +1,517 @@
+:root {
+    /*--bg-color:#4CFF55;*/ /*fellichtgroen*/
+    /*--bg-color: #9CFFA1;*/ /*lichtgroen*/
+    /*--bg-color:#1abc9c;*/ /*groen*/
+    /*--bg-color:lightblue;*/
+    --bg-color:#ADEEC7; /*mintgroen*/
+    --bg-color:white;
+    --special-text:#333;
+    --min-height:500px;
+    --green-text:#4CAF50;
+}
+
+.green_text {
+  color: var(--green-text);
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  /*text-shadow: 2px 2px 2px white;*/
+}
+
+body a {
+  color: var(--special-text);
+  text-decoration: none;
+  /*text-transform: capitalize;*/
+}
+
+.container {
+	/*margin-left: 250px;*/
+	/*margin-right: 250px;*/
+  width: 1000px;
+  margin: 0 auto; 
+ 
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.header {
+  /*padding-top: -10px;*/
+/*  padding-left: auto;
+  padding-right: 100px;
+  padding-bottom: 30px;*/
+  text-align: right;
+  color: var(--special-text);
+  font-size: 25px;
+  height: 150px;
+  overflow: hidden;
+  /*background-image: linear-gradient(white, var(--bg-color));*/
+  /*background-image: url("img/logo_naast_elkaar.png");*/
+  background-image: url("img/reiskoker_logo.png");
+  background-size: 67%;
+  background-position: left center;
+  background-repeat: no-repeat;
+
+}
+
+/*.header a {
+  color: var(--special-text);
+  text-decoration: none;
+}
+*/
+.subheader {
+	padding-left: 10%;
+	text-align: left;
+}
+
+h1 {
+	font-family: Monaco;
+}
+/*
+h2 {
+  text-transform: capitalize;
+}*/
+
+.green
+{
+    color: #7e9b1e;
+    /*font-size: 14px;*/
+    font-weight: bold;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.topnav a {
+  float: right;
+  color: var(--special-text);
+  text-align: center;
+  padding: 14px 16px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  /*background-color: #94CAAA;*/
+  background-color: #4CAF50;
+  margin-left: 5px;
+}
+
+.topnav a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Add a background image to the search bar */
+.searchbar {
+  overflow: hidden;
+  /*background-color: #e9e9e9;*/
+  background: url("img/ontbijt_achtergrond.jpg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the image */
+
+  /*background: url("img/ontbijt_achtergrond.jpg") top left repeat-x;*/
+  height: 250px;
+  width: 100%;
+}
+
+/* Style the search box inside the navigation bar */
+.searchbar input[type=text] {
+  /*float: right;*/
+  /*padding: 6px;*/
+  /*border: none;*/
+  margin-top: 90px;
+  /*height: 20px;*/
+  margin: 90 auto;
+  /*margin-left: auto;*/
+  /*width: 300px;*/
+  /*width: 100%;*/
+  /*display: block;*/
+  /*margin-bottom: 20px;*/
+  font-size: 17px;
+
+}
+
+/*sidebar*/
+.sidebar {
+  height: 100%;
+  width: 160px;
+  margin-bottom: 0px;
+  /*margin-left:50px;*/
+  /*position: fixed;*/
+  /*z-index: 1;*/
+  /*top: 0;*/
+  left: 0;
+  background-color: var(--bg-color);
+  /*overflow-x: hidden;*/
+  padding-top: 16px;
+  float: left;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  /*font-size: 20px;*/
+  color: #4CAF50;
+  display: block;
+  font-weight: bold;
+  /*text-transform: uppercase;*/
+  /*text-shadow: 2px 2px 4px gray;*/
+}
+
+.sidebar a:hover {
+  color: #4CAF50;
+}
+
+/*sidebar*/
+.sidebarRight {
+  height: 100%;
+  width: 200px;
+  /*margin-left:50px;*/
+  /*position: fixed;*/
+  /*z-index: 1;*/
+  /*top: 0;*/
+  right: 0;
+  /*background-color: var(--bg-color);*/
+  /*overflow-x: hidden;*/
+  float: right;
+  min-height: var(--min-height);
+  text-align: center;
+}
+
+.sidebarRight a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  /*font-size: 20px;*/
+  display: block;
+}
+
+.sidebarRight a:hover {
+  color: var(--green-text);
+}
+
+/* Page Content */
+.contentIndex {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 10px;
+  /*height:500px;*/
+  /*background: url("img/bg.png");*/
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the image */
+
+}
+
+.contentRecipe {
+  margin-right: 200px; /* Same as the width of the sidenav */
+  padding: 30px;
+  min-height: var(--min-height);
+}
+
+.introText {
+  padding: 10px;
+  padding-bottom: 30px;
+  line-height: 140%;
+  color: #595959;
+}
+/*
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}*/
+
+.dishTitle {
+  font-size: 30px;
+  color: #275929;
+  font-weight: bold;  
+  /*text-transform: capitalize;*/
+}
+
+.dishTitle:first-letter {
+  text-transform: capitalize
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dishImg {
+  width: 80%;
+  max-width: 600px;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.thumbImg {
+  width: 100%;
+  max-width: 230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.thumbImg img {
+  border:1px solid #e8e8e8;
+}
+
+table {
+  text-align: center;
+  font-size: 13px;
+  /*text-transform: capitalize;*/
+}
+
+.tableContents:first-letter {
+  text-transform: capitalize
+}
+
+
+.tableContents a:hover {
+  color: var(--green-text);
+}
+
+.sidebarRightText {
+  padding: 10pt;
+  text-align: left;
+  font-weight: bold;
+}
+
+.dishesTable {
+  /*width:700px;*/
+  max-width: 800px;
+  margin: auto;
+  /*float: right;*/
+}
+
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+
+/** { box-sizing: border-box; }*/
+/*body {
+  font: 16px Arial;
+}*/
+
+
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin-left:auto;
+}
+input[type=submit] {
+  background-color: lightgray;
+  color: #fff;
+  margin-left:25px;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.inside {
+  margin: auto;
+  width: 50%;
+
+}
+
+.categoryHeader{
+  color: #275929;
+}
+
+.category1{
+  /*padding-left:10px;*/
+  text-transform: uppercase;
+}
+
+.category2{
+  font-size: 95%;
+  padding-left:10px;
+  text-transform: lowercase;
+}
+
+.category2:first-letter {
+  text-transform: capitalize;
+}
+
+.category3{
+  font-size: 92%;
+  padding-left:20px;
+  text-transform: lowercase;
+}
+
+.category3:first-letter {
+  text-transform: capitalize;
+}
+
+.sidebarCategories{
+}
+
+.sidebarCategories:first-letter {
+  text-transform: capitalize;
+}
+
+
+/* Container holding the image and the text */
+.travelPicture {
+  position: relative;
+}
+
+/* Bottom right text */
+.travelBlock {
+  position: absolute;
+  /*top: 30px;*/
+  top: 0px;
+  /*left: 100px;*/
+  left: 0px;
+  /*right: 100px;*/
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.3);
+  /*opacity: 0.2;*/
+  color: black;
+
+  /*text-shadow: 1px 1px 1px white;*/
+  padding: 20px 20px 20px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+/*
+.travelBlock p {
+  color: black;
+}*/
+
+.blogTitle {
+  padding-top: 50px;
+  font-size: 30px;
+  color: #275929;
+  font-weight: bold;  
+  /*text-transform: capitalize;*/
+}
+
+.blogSubheader {
+  color: #275929;
+  font-weight: bold;
+}
+
+.blogText {
+
+}
+
+.blogText a {
+  text-decoration: underline;
+}
+
+
+/* Clear floats after image containers */
+.blogPictureRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.blogButton {
+  /*background-color: rgba(255, 0, 0, 1);*/
+  width: 100%;
+  /*height:400px;*/
+
+}
+
+.blogButton::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.blogButtonImg {
+  width: 30%;
+  height:100%;
+  float:left;
+  padding-top: 15px;
+  /*padding-left: 2%;*/
+  padding-right: 2%;
+}
+
+.blogButtonText{
+width: 68%;
+padding-top:15px;
+float:right;
+}
+
+.blogButtonTitle{
+  /*padding-top: 50px;*/
+  font-size: 25px;
+  color: #275929;
+  font-weight: bold;  
+  /*text-transform: capitalize;*/
+}

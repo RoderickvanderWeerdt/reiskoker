@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reiskoker <3</title>
+  <link rel="stylesheet" type="text/css" href="reiskoker.css" title="default">
+
+</head>
+<body>
+<div class="container">
+  <a href="index.html">
+  <div class="header">
+    <!-- <h1><a href="index.html"><span class="green">N</span><span>athalie's</span>&nbsp;<span class="green">K</span><span>eukenhulp</span></a></h1> -->
+    <!-- <div class="subheader"><p>Verspillen?<br />dat moeten we niet willen!</p></div> -->
+  </div>
+  </a>
+
+  <div class="topnav">
+    <a href="explanation.html">How to?</a>
+    <a href="travel.html">Reizen</a>
+    <a href="#" onclick="return getRandomDish();">Doe een gok!</a>
+    <!-- <a href="#" onclick="return goToRandomDish();">doe een gok</a> -->
+    <!-- <a href="#news">Maaltijd</a> -->
+    <!-- <a href="#contact">Soort</a> -->
+    <a href="top6.html">Top 6</a>
+  </div>
+    <div class="searchbar">
+    <div class="inside">
+    <!--Make sure the form has the autocomplete function switched off:-->
+<!-- <form autocomplete="off"> -->
+  <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="ingredientSearchBar" placeholder="Welk ingredi&#235;nt heb je over?">
+  </div>
+  <input type="submit" value="Go!" id="submit" onclick="return goToIngredientPage();" disabled=true>
+<!-- </form> -->
+      <!-- <input type="text" placeholder="How are you doing?"> -->
+    </div></div>
+  <div class="sidebar" id="sidebar">
+<script>
+const ingredient_list = ["mosterd", "spekjes", "croutons", "zonnebloemolie", "masala kruiden", "rijst", "zout", "dadels", "eieren", "komijn", "water", "harissa", "ui", "witte kool", "avocado", "tamarindepasta of limoensap", "saffraan", "stokbrood", "rijstmeel", "creme fraiche", "jasmijnrijst", "wortels", "kaneel", "massamanpasta of garnalenpasta", "erwtjes", "amaretto", "whisky", "kiwi's", "tauge", "speklap ", "sesamzaadjes", "biefstuk", "chorizoworst", "slagroom", "geraspte kaas", "prei", "rijstvel", "risottorijst", "kippenbouillon", "rode ui", "garnalen", "sushirijst", "melk", "runderbouillon", "worcestersaus", "paprikapoeder", "kokosmelk", "kersen", "venkelknol", "mango", "tomaten", "komkommer", "kardemom", "appelstroop", "naan brood", "jus", "chilisaus", "boter", "framboos", "wokolie", "cranberries", "ahornsiroop", "ontbijtkoek", "zwarte peper", "mihoen", "rode curry pasta", "nootmuskaat", "basmatirijst", "citroensap", "basilicum", "chocola", "wit brood", "rodewijnazijn", "rijstazijn", "broodkruimels", "peterselie", "vloeibare boter", "fetakaas", "knoflook", "peultjes", "knoflookpoeder", "frietjes", "kikkererwten", "rundergehakt", "aardappels", "palmsuiker", "gochujang pasta of saus", "vissaus", "azijn", "korianderpoeder", "rijstnoedels", "rundvlees", "chilipeper", "radijsjes", "zeewier", "sherry", "gnocchi", "olijven", "spinazie", "kokosmelk of kokospoeder", "koolraap", "couscous", "sojasaus", "gebakken uitjes", "appel", "verse bieslook", "laurierblaadjes", "tikka masala pasta", "brood", "champignons", "koriander", "kip", "picadillo kruiden", "limoen", "pijnboompitten", "volkoren tortilla wraps", "citroen", "lamsvlees", "spitskool", "pesto arrabbiata", "italiaanse kruiden", "ongezouten pinda's", "oregano en tijm", "kokospoeder", "sambal", "vanille yoghurt", "bruine suiker", "honing", "parmezaanse kaas", "pompoen", "mozzarellakaas", "basterdsuiker", "bladerdeeg", "abrikozen", "rivierkreeftjes", "rode wijn", "peren", "paneermeel", "ketjap", "paprika", "ras el hanout", "tamarindepasta", "bloem", "pasta", "ananas", "mayonaise", "olijfolie", "katenspek", "peper", "pesto", "zalm", "peper en zout", "naanbrood", "tijm", "aubergine", "kruidnagels", "havermout", "ui ", "pastinaak", "vodka", "yoghurt", "kerriekruiden", "sla", "lente ui", "filobladerdeeg", "citroengras", "witte wijn", "tomatenpuree", "kappertjes", "sperziebonen", "ijs", "suiker", "rozijnen", "vanillevla", "groentebouillon", "roti pannenkoek", "mais", "roombotercake", "garam masala", "gorgonzola", "rode bessen of framboos", "bruin bier", "hoisin saus", "peper ", "munt", "gerookte kipfilet", "gemberpoeder"];
+</script>
+<div class="green_text"><h2>HOW TO</h2></div>
+</div>
+<div class="contentIndex">
+    <div class="introText">
+
+Reiskoker werkt in een aantal stappen. Heb je een ingredi&#235;nt over dat niet lang houdbaar is? Gooi het niet weg, want verspillen dat moeten we niet willen!<br /><br />
+<!-- <div style="line-height: 400%;"> --><b>
+1. Stop het ingredi&#235;nt in de keukenhulp - oftewel zoekmachine<br /><br />
+2. Je ingredi&#235;nt gaat op "reis" - de zoekmachine zoekt geschikte recepten<br /><br />
+3. Bekijk de bestemming - geniet van een heerlijk gerecht<br /><br />
+4. Krijg inspiratie over de volgende reis - bekijk recepten met dezelfde ingredi&#235;nten. Je kan in het recept klikken op het ingredi&#235;nt dat je over hebt!<br /><br />
+5. Thuiskomst - de cirkel is rond en begint weer opnieuw met een ander ingredi&#235;nt</div><!-- </div> --></b>
+</div>
+
+  </div>
+
+</div>
+<script src="autocomplete_searchbar.js"></script>
+<script>
+autocomplete(document.getElementById("myInput"), ingredient_list);
+</script>
+<script src="dishList.js"></script>
+<script src="recipe.js"></script>
+
+
+</body>
+</html>
