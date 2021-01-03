@@ -389,7 +389,10 @@ input[type=submit] {
 
 .category1{
   /*padding-left:10px;*/
-  text-transform: uppercase;
+  text-transform: lowercase;
+}
+.category1:first-letter {
+  text-transform: capitalize;
 }
 
 .category2{
