@@ -96,8 +96,10 @@ function getAllDishes (listOfDishes) {
 		const dishURI = element[2];
 		var textCell = textRow.insertCell(cellCounter);
 		var pictCell = pictRow.insertCell(cellCounter);
+//		textCell.innerHTML = '<div class="thumb">';
 		textCell.innerHTML = '<div class="tableContents"><a href=\"recept_'+ dishURI + '.html\">' + dishName + '</a></div>';
 		pictCell.innerHTML = '<div class="thumbImg"><a href=\"recept_'+ dishURI + '.html\"><img src="'+dishImgLoc+'" alt="'+dishName+'"></a></div>';
+//		textCell.innerHTML += '</div>';
 		if (cellCounter == 2) {
 			textRow = table.insertRow(rowCounter++);
 			pictRow = table.insertRow(rowCounter++);
@@ -107,6 +109,59 @@ function getAllDishes (listOfDishes) {
 		};
 	});
 	document.getElementById("dishCounter").textContent = listOfDishes.length;
+};
+
+function getSomeDishes (listOfDishes, start_dish, n_dishes) {
+    var listOfSomeDishes;
+    console.log(start_dish, n_dishes, listOfDishes.length);
+    if (n_dishes>=listOfDishes.length){
+        listOfSomeDishes = listOfDishes.slice(start_dish, listOfDishes.length);
+    }else{
+        listOfSomeDishes = listOfDishes.slice(start_dish, n_dishes);
+    }
+	var table = document.getElementById("dishesTable");
+	table.innerHTML = "";
+	var rowCounter = 0;
+	var cellCounter = 0;
+	var textRow = table.insertRow(rowCounter++);
+	var pictRow = table.insertRow(rowCounter++);
+	listOfSomeDishes.forEach(element => {
+		// console.log('retrieved dish: ' + element[0]);
+		const dishName = element[0];
+		// const dishImgLoc = element.img_location.value;
+		const dishImgLoc = element[1];
+		const dishURI = element[2];
+		var textCell = textRow.insertCell(cellCounter);
+		var pictCell = pictRow.insertCell(cellCounter);
+//		textCell.innerHTML = '<div class="thumb">';
+		textCell.innerHTML = '<div class="tableContents"><a href=\"recept_'+ dishURI + '.html\">' + dishName + '</a></div>';
+		pictCell.innerHTML = '<div class="thumbImg"><a href=\"recept_'+ dishURI + '.html\"><img src="'+dishImgLoc+'" alt="'+dishName+'"></a></div>';
+//		textCell.innerHTML += '</div>';
+		if (cellCounter == 2) {
+			textRow = table.insertRow(rowCounter++);
+			pictRow = table.insertRow(rowCounter++);
+			cellCounter = 0;
+		}else{
+			cellCounter++;
+		};
+	});
+    var lastRow = table.insertRow(rowCounter++);
+    var firstCell = lastRow.insertCell(0);
+    var middleCell = lastRow.insertCell(1);
+    var lastCell = lastRow.insertCell(2);
+    firstCell.innerHTML = '<div class="tableButton"><button class="tableButton1">Ik wil de vorige recepten zien!</button></div>';
+    firstCell.onclick = function () {getSomeDishes(listOfDishes, parseInt(start_dish)-(parseInt(n_dishes)-parseInt(start_dish)), parseInt(start_dish))};
+    lastCell.innerHTML = '<div class="tableButton"><button class="tableButton1">Ik wil meer recepten zien!</button></div>';
+    lastCell.onclick = function () {getSomeDishes(listOfDishes, parseInt(n_dishes), (parseInt(n_dishes)+(parseInt(n_dishes)-parseInt(start_dish))))};
+    if(n_dishes >= listOfDishes.length){
+        lastCell.innerHTML = '';
+        lastCell.onclick = '';
+    }
+    if(parseInt(start_dish) <= 0){
+        firstCell.innerHTML = '';
+        firstCell.onclick = '';
+    }
+	document.getElementById("dishCounter").textContent = listOfSomeDishes.length;
 };
 
 // const getAllSidebar = async () => {

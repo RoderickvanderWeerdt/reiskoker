@@ -3,11 +3,12 @@
     /*--bg-color: #9CFFA1;*/ /*lichtgroen*/
     /*--bg-color:#1abc9c;*/ /*groen*/
     /*--bg-color:lightblue;*/
-    --bg-color:#ADEEC7; /*mintgroen*/
+    --mint-text:#ADEEC7; /*mintgroen*/
     --bg-color:white;
     --special-text:#333;
     --min-height:500px;
     --green-text:#4CAF50;
+    --bright-text:#4CFF55;
 }
 
 .green_text {
@@ -156,12 +157,14 @@ h2 {
   color: #4CAF50;
   display: block;
   font-weight: bold;
+  width: 20%;
   /*text-transform: uppercase;*/
   /*text-shadow: 2px 2px 4px gray;*/
 }
 
 .sidebar a:hover {
-  color: #4CAF50;
+  /*color: #ccc;*/
+  /*color: var(--bright-text);*/
 }
 
 /*sidebar*/
@@ -251,8 +254,13 @@ img {
 }
 
 .thumbImg img {
-  border:1px solid #e8e8e8;
+  /*border:1px solid #e8e8e8;*/
+  box-shadow: 10px 10px 5px grey;
 }
+
+/*.thumb{
+  box-shadow: 10px 10px 5px grey;
+}*/
 
 table {
   text-align: center;
@@ -517,4 +525,44 @@ float:right;
   color: #275929;
   font-weight: bold;  
   /*text-transform: capitalize;*/
+}
+
+/*ADDED FOR COLLAPSIBLE*/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  /*cursor: pointer;*/
+  /*padding: 18px;*/
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  background-color: var(--bg-color);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.sidebar_content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  float: left;
+  margin-top: -25px;
+  margin-left: -5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/*END OF COLLAPSIBLE*/
+
+.tableButton1 {
+  background-color: var(--green-text);
+  color: white;
+  border: 0px;
+  padding: 15px;
 }
