@@ -256,6 +256,7 @@ img {
 .thumbImg img {
   /*border:1px solid #e8e8e8;*/
   box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
 }
 
 /*.thumb{
@@ -565,4 +566,5 @@ float:right;
   color: white;
   border: 0px;
   padding: 15px;
+  border-radius: 5px;
 }
