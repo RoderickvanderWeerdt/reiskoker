@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reiskoker</title>
+  <link rel="stylesheet" type="text/css" href="reiskoker.css" title="default">
+
+</head>
+<body>
+<div class="container">
+  <a href="index.html">
+  <div class="header">
+    <!-- <h1><a href="index.html"><span class="green">N</span><span>athalie's</span>&nbsp;<span class="green">K</span><span>eukenhulp</span></a></h1> -->
+    <!-- <div class="subheader"><p>Verspillen?<br />dat moeten we niet willen!</p></div> -->
+  </div>
+  </a>
+
+  <div class="topnav">
+    <!-- <a href="explanation.html">How to?</a> -->
+    <a href="travel.html">Reizen</a>
+    <a href="#" onclick="return getRandomDish();">Doe een gok!</a>
+    <!-- <a href="#" onclick="return goToRandomDish();">doe een gok</a> -->
+    <!-- <a href="#news">Maaltijd</a> -->
+    <!-- <a href="#contact">Soort</a> -->
+    <a href="top6.html">Top 6</a>
+  </div>    <div id="sidebarCategories" class="sidebarCategories"><h2>griekse<br />gerechten</h2>
+    </div><div class="contentIndex">
+<table class="dishesTable" id="dishesTable">
+</table></div>
+<script type="text/javascript">
+  const dishImgList = [["griekse vega gyros wraps", "thumbnail/gyros_wrap.jpg", "griekse_vega_gyros_wraps"]]
+</script>Deze pagina laat <span id="dishCounter">?</span> gerechten zien.
+<script src="recipe.js"></script>
+<script type="text/javascript"> getAllDishes(dishImgList); </script></div></div></body></html>
