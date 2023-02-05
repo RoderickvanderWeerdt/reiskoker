@@ -51,6 +51,7 @@
 	<div class="category1"><a href="keuken_aziatisch.html">aziatisch</a></div>
 </button>
 <div class="sidebar_content">
+<div class="category2"><a href="keuken_chinees.html">chinees</a></div>
 <div class="category2"><a href="keuken_indiaas.html">indiaas</a></div>
 <div class="category2"><a href="keuken_indonesisch.html">indonesisch</a></div>
 <div class="category2"><a href="keuken_japans.html">japans</a></div>
@@ -79,14 +80,25 @@
 <div class="category2"><a href="keuken_zwitsers.html">zwitsers</a></div>
 </div>
 
+<button type="button" class="noncollapsible">
+<div class="category1"><a href="keuken_midden-oosten.html">midden-oosten</a></div>
+</button>
+<br />
+
 <button type="button" class="collapsible">
-<div class="category1"><a href="#">overig</a></div>
+<div class="category1"><a href="keuken_noord-amerikaans.html">noord-amerikaans</a></div>
 </button>
 <div class="sidebar_content">
 <div class="category2"><a href="keuken_amerikaans.html">amerikaans</a></div>
-<div class="category2"><a href="keuken_argentijns.html">argentijns</a></div>
-<div class="category2"><a href="keuken_marokkaans.html">marokkaans</a></div>
 <div class="category2"><a href="keuken_mexicaans.html">mexicaans</a></div>
+</div>
+<br />
+
+<button type="button" class="collapsible">
+<div class="category1"><a href="keuken_zuid-amerikaans.html">zuid-amerikaans</a></div>
+</button>
+<div class="sidebar_content">
+<div class="category2"><a href="keuken_argentijns.html">argentijns</a></div>
 <div class="category2"><a href="keuken_surinaams.html">surinaams</a></div>
 </div>
 <br />
@@ -105,6 +117,7 @@
 <div class="category1"><a href="bereiding_noedel.html">noedel</a></div>
 <div class="category1"><a href="bereiding_oven.html">oven</a></div>
 <div class="category1"><a href="bereiding_pasta.html">pasta</a></div>
+<div class="category1"><a href="bereiding_peulvruchten.html">peulvruchten</a></div>
 <div class="category1"><a href="bereiding_rijst.html">rijst</a></div>
 <div class="category1"><a href="bereiding_salade.html">salade</a></div>
 <div class="category1"><a href="bereiding_soep.html">soep</a></div>
@@ -145,7 +158,7 @@
 
 
 <script>
-const ingredient_list = ["boter", "cheddarkaas", "framboos", "groentebouillon", "mihoen", "paneermeel", "boemboe voor sajoerboontjes", "bladerdeeg", "slagroom", "rivierkreeftjes", "peultjes", "chorizoworst", "mais", "katenspek", "spinazie", "ras el hanout", "biefstuk", "tomatensap", "kip", "zonnebloemolie", "peper ", "ketjap", "poedersuiker", "rodewijnazijn", "zout en peper", "augurken", "kardemom", "rundvlees", "ciabatta", "sushirijst", "roombotercake", "hamburgerbroodjes", "paksoi", "kruidnagels", "ontbijtspek", "rode curry pasta", "brood", "gnocchi", "komijn", "gember", "peren", "peper en zout", "sinaasappel", "mayonaise", "naan brood", "pompoen", "croutons", "oregano en tijm", "(vegan) mayo", "witte wijnazijn", "stokbrood", "blauwe bessen", "kidneybonen", "komijnzaad", "roti pannenkoek", "stokbroden", "bamboe rolmatje", "zwarte linzen", "rode bessen of framboos", "zwarte bonen", "cranberrysap", "champignons", "balsamicoazijn", "zure room", "risottorijst", "pesto", "jus", "citroengras", "prei", "avocado", "wijn", "parelgort", "rode bessen", "libanees platbrood", "vanille yoghurt", "pijnboompitten", "gehakt", "bouillon", "rode wijn", "hummus", "komkommer", "bleekselderij", "pindakaas", "wasabi", "mango", "bladselderij", "venkelknol", "tamarindepasta of limoensap", "rode linzen", "seroendeng", "rijst", "knoflookpoeder", "sperziebonen", "knoflooksaus", "walnoten", "ijs", "vanillevla", "chilipeper", "basmatirijst", "witte bonen in tomatensaus", "shoarma", "melk", "harissa", "aardbeien", "ontbijtkoek", "peper", "lente ui", "limoen", "cruesli", "kristalsuiker", "southern comfort", "brie", "suiker", "cacaonibs", "knoflook", "citroen", "tomatenpassata", "naanbrood", "koolraap", "spekjes", "mozzarellakaas", "roomboter", "paprika", "cassavekroepoek", "druiven", "kokospoeder", "zonnebloempitten", "kappertjes", "rozijnen", "vloeibare boter", "jasmijnrijst", "ahornsiroop", "rijstnoedels", "geitenkaas", "zwarte peper", "chiazaad", "griekse yoghurt", "vanillesuiker", "gochujang pasta of saus", "citroensap", "koriander", "tarwebloem", "m&m ", "kroepoek", "seitan", "masala kruiden", "granaatappelpitjes", "sinaasappelsap", "oregano", "rum", "pasteitjes", "rijstmeel", "tabasco", "saffraan", "zalm", "snijbiet", "zoete aardappelfriet", "bruine suiker", "stroop", "kerriekruiden", "monchou", "witte kool", "paprikapoeder", "rijstazijn", "fetakaas", "italiaanse kruiden", "bloem", "korianderpoeder", "spitskool", "tomaten", "tomatenpuree", "kersen", "dadels", "rijstvel", "nootmuskaat", "pesto arrabbiata", "honing", "broodkruimels", "keukengaren", "cranberries", "olijfolie", "rode peper", "maizena", "rode wijnazijn", "babymais", "zeewier", "whisky", "aardappels", "yoghurt", "wittewijnazijn", "viskruiden", "sherry", "courgette", "garnalen", "verse bieslook", "ui", "tijm", "munt", "aubergine", "banaan", "frietjes", "pepernoten", "varkenshaas", "linzen", "olijven", "eieren", "vodka", "bakpoeder", "kaas", "havermout", "aardappelgratinade", "mediterraanse kruiden", "bruin bier", "versieringen", "rode bieten", "nori vellen", "parmezaanse kaas", "pastinaak", "sambal", "picadillo kruiden", "wit brood", "ketchup", "vissaus", "kriek", "passievrucht", "tortilla chips", "bramen", "amaretto", "chocola", "cake", "gebakken uitjes", "appelstroop", "water", "cashewnoten", "speklap ", "tzatziki kruiden", "kaffir limoen", "basterdsuiker", "falafel", "gorgonzola", "kokosmelk", "azijn", "tonijn", "chipotlesaus", "basilicum", "peterselie", "olie", "bami", "ui ", "pasta", "radijsjes", "filobladerdeeg", "jam", "appel", "sesamzaadjes", "porcini", "laurierblaadjes", "tamarindepasta", "lamsvlees", "watermeloen", "kiwi", "sojasaus", "gemberpoeder", "jackfruit", "tofu", "pizzabodems", "mosterd", "kaneel", "hoisin saus", "chilisaus", "zelfrijzend bakmeel", "ongezouten pinda's", "honingmosterdsaus", "friet", "sojabrokken", "mandarijntjes", "kippenbouillon", "erwtjes", "wraps", "zout", "vijgen", "runderbouillon", "sla", "ananas", "worcestersaus", "bastognekoekjes", "pindasaus", "gembersiroop", "kiwi's", "havergrutten", "abrikozen", "wortels", "palmsuiker", "massamanpasta of garnalenpasta", "zout en olijfolie", "tauge", "cassave kroepoek", "gerookt paprikapoeder", "couscous", "garam masala", "ijsblokjes", "creme fraiche", "agavesiroop", "havermelk"];
+const ingredient_list = ["balsamicoazijn", "versieringen", "pesto arrabbiata", "m&m ", "watermeloen", "risottorijst", "seroendeng", "zwarte linzen", "verse bieslook", "zalm", "sla", "tonijn", "zonnebloempitten", "snijbiet", "chilipeper", "chilisaus", "katenspek", "boemboe voor sajoerboontjes", "abrikozen", "tamarindepasta", "bloem", "paksoi", "paprikapoeder", "bruine suiker", "peper", "rum", "wortels", "kroepoek", "cruesli", "rijst", "tijm", "cake", "chiazaad", "whisky", "gebakken uitjes", "sperziebonen", "sinaasappelsap", "basterdsuiker", "tomaten", "filobladerdeeg", "vijgen", "rode bessen", "havermout", "lamsvlees", "kidneybonen", "tzatziki kruiden", "olie", "eieren", "hoisin saus", "tarwebloem", "couscous", "cranberries", "naan brood", "biefstuk", "pasteitjes", "kristalsuiker", "bleekselderij", "mosterd", "kaas", "rozijnen", "komkommer", "boter", "pompoen", "rundvlees", "bakpoeder", "citroengras", "champignons", "basmatirijst", "peultjes", "venkelknol", "witte wijnazijn", "massamanpasta of garnalenpasta", "mediterraanse kruiden", "zonnebloemolie", "limoen", "mandarijntjes", "paprika", "tomatenpassata", "rode curry pasta", "sushirijst", "water", "sesamzaadjes", "melk", "rode bieten", "zwarte bonen", "babymais", "ijs", "kiwi's", "masala kruiden", "pindakaas", "roti pannenkoek", "basilicum", "mozzarellakaas", "zwarte peper", "spekjes", "griekse yoghurt", "chipotlesaus", "havergrutten", "ahornsiroop", "amaretto", "bami", "picadillo kruiden", "gnocchi", "knoflook", "tortilla chips", "geitenkaas", "ui ", "wit brood", "olijven", "banaan", "keukengaren", "speklap ", "paneermeel", "ongezouten pinda's", "pindasaus", "gorgonzola", "shoarma", "tamarindepasta of limoensap", "varkenshaas", "brie", "kiwi", "ontbijtspek", "koolraap", "cassave kroepoek", "rijstnoedels", "courgette", "tomatenpuree", "kip", "kippenbouillon", "laurierblaadjes", "granaatappelpitjes", "frietjes", "ketchup", "pasta", "peren", "kaneel", "pizzabodems", "jackfruit", "bladselderij", "azijn", "slagroom", "nootmuskaat", "bouillon", "runderbouillon", "rode wijn", "mais", "zoete aardappelfriet", "stroop", "mihoen", "jasmijnrijst", "knoflooksaus", "harissa", "zout", "witte bonen in tomatensaus", "peper ", "kokospoeder", "ui", "chorizoworst", "cheddarkaas", "cacaonibs", "bruin bier", "tabasco", "honing", "komijnzaad", "worcestersaus", "gerookt paprikapoeder", "citroen", "tomatensap", "parelgort", "zelfrijzend bakmeel", "gemberpoeder", "dadels", "saffraan", "spinazie", "falafel", "seitan", "rode wijnazijn", "gembersiroop", "pastinaak", "rijstmeel", "appelstroop", "tofu", "pijnboompitten", "lente ui", "erwtjes", "ras el hanout", "aubergine", "aardbeien", "munt", "bladerdeeg", "knoflookpoeder", "ananas", "vloeibare boter", "rivierkreeftjes", "gember", "kriek", "wittewijnazijn", "fetakaas", "mayonaise", "sherry", "citroensap", "rijstazijn", "kardemom", "zout en olijfolie", "zeewier", "wasabi", "roombotercake", "yoghurt", "prei", "palmsuiker", "southern comfort", "vanillesuiker", "ijsblokjes", "sinaasappel", "gochujang pasta of saus", "suiker", "ontbijtkoek", "witte kool", "poedersuiker", "framboos", "mango", "sojasaus", "naanbrood", "cassavekroepoek", "passievrucht", "croutons", "chocola", "korianderpoeder", "peper en zout", "augurken", "aardappelgratinade", "vodka", "olijfolie", "pepernoten", "wijn", "walnoten", "kerriekruiden", "stokbroden", "honingmosterdsaus", "linzen", "friet", "cranberrysap", "brood", "zout en peper", "parmezaanse kaas", "bastognekoekjes", "stokbrood", "garam masala", "jus", "ketjap", "kokosmelk", "vissaus", "ciabatta", "rodewijnazijn", "blauwe bessen", "garnalen", "jam", "broodkruimels", "appel", "kaffir limoen", "tauge", "viskruiden", "hummus", "radijsjes", "groentebouillon", "aardappels", "hamburgerbroodjes", "gehakt", "(vegan) mayo", "roomboter", "oregano en tijm", "sambal", "bramen", "cashewnoten", "vanille yoghurt", "koriander", "zure room", "wraps", "rode peper", "agavesiroop", "havermelk", "libanees platbrood", "kruidnagels", "druiven", "maizena", "pesto", "nori vellen", "vanillevla", "bamboe rolmatje", "spitskool", "sojabrokken", "rode linzen", "porcini", "rode bessen of framboos", "rijstvel", "avocado", "italiaanse kruiden", "kappertjes", "monchou", "creme fraiche", "oregano", "komijn", "peterselie", "kersen"];
 </script>
 <script src="dishList.js"></script>
 <script src="recipe.js"></script>
